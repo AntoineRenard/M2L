@@ -347,3 +347,10 @@ CREATE TABLE ligue(
     idDiscipline INTEGER REFERENCES discipline (id) ON DELETE CASCADE  
 );
 success!
+timestamp: 2017-03-29T08:11:49.035536
+CREATE TABLE discipline(
+    id INT AUTO_INCREMENT NOT NULL,
+    libelle VARCHAR(512),
+    olympique VARCHAR(512),
+    PRIMARY KEY (id)
+) ENGINE=InnoDB CHARACTER SET utf8;

@@ -3,7 +3,7 @@
 db.define_table('discipline',
                 Field('libelle','string',requires=IS_NOT_EMPTY()),
                 Field('olympique','string',requires=IS_IN_SET(['OUI','NON']))
-                ,migrate = True
+                ,migrate = False
                )
 
 db.define_table('ligue',
